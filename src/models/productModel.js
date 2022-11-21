@@ -15,6 +15,7 @@ const getProductFromID = async (id) => {
 const insertProducts = async ({ name }) => {
   await connection
     .execute('INSERT INTO products (name) VALUES (?)', [name]);
+  return name;
 };
 
 const productInserteds = async () => {
