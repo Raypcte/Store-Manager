@@ -14,7 +14,16 @@ const getProductFromID = async (id) => {
   }
 };
 
+const insertProducts = async (product) => {
+  await productModel.insertProducts(product);
+  const newProduct = await productModel.productInserteds(product);
+  console.log(newProduct, 'novo');
+
+  if (newProduct) return newProduct[0];
+};
+
 module.exports = {
   getAllProducts,
   getProductFromID,
+  insertProducts,
 };

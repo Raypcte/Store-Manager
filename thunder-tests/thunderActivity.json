@@ -1,0 +1,49 @@
+[
+  {
+    "_id": "f2bfe710-f6f7-4152-aa53-249a325a039d",
+    "colId": "history",
+    "containerId": "",
+    "name": "https://localhost:3000/products",
+    "url": "http://localhost:3000/products",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-11-20T23:56:35.761Z",
+    "modified": "2022-11-21T00:11:07.317Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"mozinho\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "34c4386c-d396-4f1e-a4bd-fa1ac3bda6fc",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/products",
+    "url": "http://localhost:3000/products",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-11-20T23:56:45.220Z",
+    "modified": "2022-11-21T00:11:43.499Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "9a6310c4-fed5-4ec6-aa1d-11ac6a9659b2",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/products/3",
+    "url": "http://localhost:3000/products/5",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-11-20T23:57:13.372Z",
+    "modified": "2022-11-21T00:11:32.139Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  }
+]
