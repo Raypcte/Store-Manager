@@ -10,6 +10,7 @@ const createSales = async (sales) => {
       'INSERT INTO sales_products(sale_id, product_id, quantity) Values (?, ?, ?)',
       [insertId, productId, quantity],
     );
+    // oi
   });
 
   return {
