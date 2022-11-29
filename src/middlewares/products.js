@@ -1,4 +1,5 @@
 const productModel = require('../models/productModel');
+const salesModel = require('../models/modelSales');
 
 const midProduct = async (req, res, next) => {
   const { id } = req.params;
@@ -6,6 +7,16 @@ const midProduct = async (req, res, next) => {
 
   if (!dados.length) {
     return res.status(404).json({ message: 'Product not found' });
+  }
+  next();
+};
+
+const midSales = async (req, res, next) => {
+  const { id } = req.params;
+  const dados = await salesModel.getSalesFromID(id);
+
+  if (!dados.length) {
+    return res.status(404).json({ message: 'Sale not found' });
   }
   next();
 };
@@ -51,7 +62,7 @@ const quantity = (req, res, next) => {
 const productFound = async (req, res, next) => {
   const sales = req.body;
   const products = await productModel.getAllProducts();
-  console.log(products, sales);
+  console.log(products, sales, 'todos produtos');
   for (let i = 0; i < sales.length; i += 1) {
     const productId1 = products.some((sale) => sale.id === sales[i].productId);
     if (!productId1) {
@@ -67,4 +78,5 @@ module.exports = {
   productId,
   quantity,
   productFound,
+  midSales,
 };
