@@ -12,6 +12,10 @@ const getProductFromID = async (id) => {
   return [];
 };
 
+const updateProductFromID = async (id, newProduct) => {
+  await productModel.updateProductFromID(id, newProduct);
+};
+
 const insertProducts = async (product) => {
   await productModel.insertProducts(product);
   const newProduct = await productModel.productInserteds(product);
@@ -24,4 +28,5 @@ module.exports = {
   getAllProducts,
   getProductFromID,
   insertProducts,
+  updateProductFromID,
 };
