@@ -1,10 +1,7 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+# README 
+
+ - projeto consiste na construção de uma API RESTful utilizando a arquitetura MSC, tratando-se de um sistema de gerenciamento de vendas, onde é possível criar, visualizar, deletar e atualizar(CRUD) produtos e vendas.
+ 
+ # Tecnologia
+ 
+ - Desenvolvido usando: Node.js, Express , MySQL!
